@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web de make-up artiste. Découvrez nos services et produits.">
+    <title>Accueil- Nawa - Make-Up Artiste</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Twinkle+Star&family=WindSong&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <!-- En-tête du site -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand calligraffitti-regular" href="index.html">
+                    <img src="../img/nawa-logo.png" alt="Logo nawa" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="produits.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="evenements.html">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="apropos.html">À propos</a>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0 ml-auto search-form">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                    </form>
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-panier.png" alt="Panier" class="cart-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+ 
+<!-- Carrousel d'images -->
+<section class="hero-carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+        <div class="carousel-inner carousel-container">
+            <!-- Diapositive du carrousel -->
+            <div class="carousel-item active">
+                <img src="../img/femme-caroussel-1.webp" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/make-up-1-caroussel.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/make-up-2-caroussel-3.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/jeune-carroussel-2.jpg" class="d-block w-100" alt="Image 4">
+            </div>
+
+            <!-- Texte fixe au-dessus du carrousel -->
+            <div class="carousel-item-text">
+                <h1 class="calligraffitti-regular">Bienvenue sur notre site de Make-Up Artiste</h1>
+                <section class="about-makeup text-center mt-5">
+                    <p class="roboto">
+                        Un(e) make-up artiste est un professionnel de la beauté spécialisé dans l'application de produits cosmétiques pour améliorer, transformer ou créer des looks variés sur la peau. Ce métier va bien au-delà de l'application de maquillage ; il/elle est un(e) véritable créateur(trice) de beauté, capable de concevoir des apparences qui répondent à des besoins spécifiques ou à des visions artistiques.
+                        <br>
+                        Chez NAWA , le métier de make-up artiste est à la croisée de l’art et de la technique, demandant une passion pour la beauté et une compétence technique raffinée. C’est un domaine où la créativité rencontre la précision pour créer des résultats qui mettent en valeur et subliment chaque individu.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+</section>
+
+
+ 
+    <!-- Contenu principal -->
+    <main class="container mt-5">
+        <section id="discover" class="discover-section text-center mt-5">
+            <h2 class="calligraffitti-regular text-orange"> Nos Produits</h2>
+            <p class="Roboto">Nous avons une gamme variée de services et de produits pour répondre à tous vos besoins en maquillage. N'hésitez pas à explorer nos offres pour en savoir plus.</p>
+        </section>
+
+         <!-- Section des cartes de produits -->
+         <section class="products mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Produit 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="../img/produit1.jpg" class="card-img-top" alt="Produit 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Les Fards à paupières</h5>
+                                <p class="card-text">Le fard à paupières ajoute couleur et éclat aux yeux, offrant une vaste gamme de teintes et de textures pour personnaliser votre regard.</p>
+                                <a href="#" class="btn btn-custom">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produit 2 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="../img/produit2.jpg" class="card-img-top" alt="Produit 2">
+                            <div class="card-body">
+                                <h5 class="card-title"> Les Pinceaux</h5>
+                                <p class="card-text">Le pinceau blush permet d’appliquer et de diffuser le fard à joues avec précision, créant un teint éclatant et naturel.</p>
+                                <a href="#" class="btn btn-custom">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produit 3 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="../img/produits3.jpg" class="card-img-top" alt="Produit 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Les Rouge à lèvres</h5>
+                                <p class="card-text">Le rouge à lèvres apporte couleur et définition aux lèvres, disponible dans une variété de finitions et de nuances.</p>
+                                <a href="#" class="btn btn-custom">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Produit 4 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="../img/produits4.jpg" class="card-img-top" alt="Produit 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Les Fonds de Teint</h5>
+                                <p class="card-text">Le fond de teint unifie et améliore l’apparence du teint, offrant une couverture variée pour un fini naturel ou sophistiqué.</p>
+                                <a href="#" class="btn btn-custom">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="container mt-5">
+        <!-- Section de la vidéo et du texte -->
+        <section class="video-text-section mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Intégration de la vidéo YouTube -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i4fxs5JLBvc?si=6PYbP9dDzXqMkUg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Texte à côté de la vidéo -->
+                    <h2 class="calligraffitti-regular text-orange">Vidéo Explicative</h2>
+                    <p class="roboto"> Un(e) make-up artiste est un professionnel de la beauté spécialisé dans l'application de produits cosmétiques pour améliorer, transformer ou créer des looks variés sur la peau. Ce métier va bien au-delà de l'application de maquillage ; il/elle est un(e) véritable créateur(trice) de beauté, capable de concevoir des apparences qui répondent à des besoins spécifiques ou à des visions artistiques.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr class="separator">
+    <style>
+        .separator {
+            height: 20px; /* Hauteur du séparateur */
+            background-color: #a12c05; /* Couleur marron */
+            margin: 30px 0; /* Marge pour séparer des autres sections */
+        }
+    </style>
+
+        <style>
+            .slider-container {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                max-width: 500px; /* Ajustez selon vos besoins */
+                margin: auto;
+            }
+    
+            .slider-wrapper {
+                display: flex;
+                transition: transform 1s ease-in-out;
+            }
+    
+            .slider-wrapper img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+    
+            .slider-controls {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+    
+            .slider-controls button {
+                background-color: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: #fff;
+                padding: 10px;
+                cursor: pointer;
+            }
+        </style>
+
+        <main class="container mt-5">
+            <!-- Animation des photos -->
+            <section class="slider-container mt-5">
+                <div class="slider-wrapper">
+                    <img src="../img/peinture-de-corps1.jpg" alt="Photo 1">
+                    <img src="../img/peinture-de-corps2.jpg" alt="Photo 2">
+                    <img src="../img/peinture-de-corps3.webp" alt="Photo 3">
+                    <img src="../img/peinture-de-corps4.webp" alt="Photo 4">
+                </div>
+                <div class="slider-controls">
+                    <button id="prev">❮</button>
+                    <button id="next">❯</button>
+                </div>
+            </section>
+        </main>
+    
+        <script>
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+            const slides = document.querySelectorAll('.slider-wrapper img');
+            const prevButton = document.getElementById('prev');
+            const nextButton = document.getElementById('next');
+    
+            let index = 0;
+            const totalSlides = slides.length;
+    
+            function showSlide(n) {
+                if (n >= totalSlides) {
+                    index = 0;
+                } else if (n < 0) {
+                    index = totalSlides - 1;
+                } else {
+                    index = n;
+                }
+                sliderWrapper.style.transform = `translateX(${-index * 100}%)`;
+            }
+    
+    
+            nextButton.addEventListener('click', () => {
+                showSlide(index + 1);
+            });
+    
+            prevButton.addEventListener('click', () => {
+                showSlide(index - 1);
+            });
+    
+            // Optionally, add auto-slide feature
+            setInterval(() => {
+                showSlide(index + 1);
+            }, 3000); // Change slide every 3 seconds
+        </script>
+
+        <section class="welcome-text text-center mt-5">
+            <h2 class="calligraffitti-regular text-orange"> Nos Évènements</h2>
+            <p class="roboto">Nous sommes passionnés par le maquillage et nous nous engageons à vous offrir les meilleurs services et produits. Explorez notre site pour découvrir nos offres exclusives et nos conseils de beauté.</p>
+            <a href="evenements.html" class="btn btn-custom">Découvrir</a> <!-- Bouton -->
+        </section>
+    </main>
+
+    <style>
+        .newsletter-section {
+            background-color: #f5f5dc; /* Beige clair */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            color: #752f04; /* Couleur marron foncé */
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .newsletter-form input[type="nom"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+       }
+
+
+        .newsletter-form input[type="email"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color:#752f04; /* Couleur marron foncé */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #e06b04; /* Couleur orange foncé au survol */
+        }
+    </style>
+
+<div class="newsletter-section mt-4">
+    <h5 class="calligraffitti-regular text-orange">Inscrivez-vous à notre newsletter</h5>
+    <form action="#" method="POST" class="newsletter-form">
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Entrez votre email" aria-label="Entrez votre email" aria-describedby="button-addon2" required>
+            <div class="input-group-append">
+                <button class="btn btn-outline-light" type="submit" id="button-addon2">S'inscrire</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Pied de page -->
+<footer class="footer-custom mt-5 p-4 text-center">
+    <div class="footer-content">
+        <div class="footer-links mb-3">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li><a class="text-white mx-3 twinkle-star-regular" href="index.html">Accueil</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="produits.html">Produits</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="evenements.html">Événements</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="contact.html">Contact</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="apropos.html">À propos</a></li>
+            </ul>
+        </div>
+        <div class="social-icons mb-3">
+            <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <a href="index.html" class="text-white">Nawa 2024 Make-Up Artiste</a>. Tous droits réservés.</p>
+            <p>
+                <a href="mentions-legales.html" class="text-white">Mentions légales</a> |
+                <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
+                <a href="rgpd.html" class="text-white">RGPD</a>
+            </p>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Bootstrap Bundle (includes Popper) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
+   

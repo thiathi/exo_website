@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web de make-up artiste. Découvrez nos services et produits.">
+    <title>produits- Nawa - Make-Up Artiste</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Twinkle+Star&family=WindSong&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <!-- En-tête du site -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand calligraffitti-regular" href="index.html">
+                    <img src="../img/nawa-logo.png" alt="Logo nawa" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="produits.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="evenements.html">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="apropos.html">À propos</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-auto search-form">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-panier.png" alt="Panier" class="cart-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+     <!-- Section de recherche -->
+     <div class="container mt-4">
+        <div class="row">
+            <div class="col text-center">
+                <input type="text" class="form-control" id="productSearch" placeholder="Rechercher un produit">
+            </div>
+        </div>
+    </div>
+
+     <!-- Boutons de filtrage -->
+     <div class="filter-button text-center mb-4">
+    <button class="filter-btn active" data-category="all">Tous</button>
+    <button class="filter-btn" data-category="fard-a-paupieres">Fard à paupières</button>
+    <button class="filter-btn" data-category="pinceaux">Pinceaux</button>
+    <button class="filter-btn" data-category="rouge-a-levres">Rouge à lèvres</button>
+    <button class="filter-btn" data-category="fond-de-teint">Fond de teint</button>
+</div>
+
+    <!-- Section des produits -->
+    <div class="container">
+        <div class="row">
+            <!-- Fard à Paupières -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fard-a-paupieres">
+                <div class="card h-100">
+                    <img src="../img/fard-a-paupieres-1.jpg" class="card-img-top" alt="fard-a-paupieres-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fard à Paupières</h5>
+                        <p class="card-price">Prix: 20€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card  fard-a-paupieres">
+                <div class="card h-100">
+                    <img src="../img/fard-a-paupieres-2.jpg" class="card-img-top" alt="fard-a-paupieres-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fard à Paupières</h5>
+                        <p class="card-price">Prix: 15€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fard-a-paupieres">
+                <div class="card h-100">
+                    <img src="../img/fard-a-paupieres-3.jpg" class="card-img-top" alt="fard-a-paupieres-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fard à Paupières</h5>
+                        <p class="card-price">Prix: 10€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fard-a-paupieres">
+                <div class="card h-100">
+                    <img src="../img/fard-a-paupieres-4.jpg" class="card-img-top" alt="fard-a-paupieres-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Fard à Paupières</h5>
+                        <p class="card-price">Prix: 25€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pinceaux -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card pinceaux">
+                <div class="card h-100">
+                    <img src="../img/pinceaux-maquillage-1.jpg" class="card-img-top" alt="pinceaux-maquillage-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinceaux</h5>
+                        <p class="card-price">Prix: 25€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card pinceaux ">
+                <div class="card h-100">
+                    <img src="../img/pinceaux-maquillage-2.jpg" class="card-img-top" alt="pinceaux-maquillage-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinceaux</h5>
+                        <p class="card-price">Prix: 25€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card pinceaux">
+                <div class="card h-100">
+                    <img src="../img/pinceaux-maquillage-3.jpg" class="card-img-top" alt="pinceaux-maquillage-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinceaux</h5>
+                        <p class="card-price">Prix: 25€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card pinceaux">
+                <div class="card h-100">
+                    <img src="../img/pinceaux-maquillage-4.jpg" class="card-img-top" alt="pinceaux-maquillage-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pinceaux</h5>
+                        <p class="card-price">Prix: 25€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rouge à lèvres -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card rouge-a-levres">
+                <div class="card h-100">
+                    <img src="../img/rouge-a-levres-1.jpg" class="card-img-top" alt="rouge-a-levres-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Rouge à Lèvres</h5>
+                        <p class="card-price">Prix: 12€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card rouge-a-levres">
+                <div class="card h-100">
+                    <img src="../img/rouge-a-levres-2.jpg" class="card-img-top" alt="rouge-a-levres-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Rouge à Lèvres</h5>
+                        <p class="card-price">Prix: 12€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card rouge-a-levres">
+                <div class="card h-100">
+                    <img src="../img/rouge-a-levres-3.jpg" class="card-img-top" alt="rouge-a-levres-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rouge à Lèvres</h5>
+                        <p class="card-price">Prix: 8€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card rouge-a-levres">
+                <div class="card h-100">
+                    <img src="../img/rouge-a-levres-4.jpg" class="card-img-top" alt="rouge-a-levres-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Rouge à Lèvres</h5>
+                        <p class="card-price">Prix: 8€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fond de teint -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fond-de-teint">
+                <div class="card h-100">
+                    <img src="../img/fond-de-teint-1.jpg" class="card-img-top" alt="fond-de-teint-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fond de Teint</h5>
+                        <p class="card-price">Prix: 18€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fond-de-teint">
+                <div class="card h-100">
+                    <img src="../img/fond-de-teint-2.jpg" class="card-img-top" alt="fond-de-teint-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fond de Teint</h5>
+                        <p class="card-price">Prix: 18€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fond-de-teint">
+                <div class="card h-100">
+                    <img src="../img/fond-de-teint-3.jpg" class="card-img-top" alt="fond-de-teint-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fond de Teint</h5>
+                        <p class="card-price">Prix: 18€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fond-de-teint">
+                <div class="card h-100">
+                    <img src="../img/fond-de-teint-4.jpg" class="card-img-top" alt="fond-de-teint-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Fond de teint</h5>
+                        <p class="card-price">Prix: 18€</p>
+                        <button class="btn btn-brown">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+            <!-- ajout des produits si nécéssaires -->
+
+
+    <style>
+        .newsletter-section {
+            background-color: #f5f5dc; /* Beige clair */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            color: #752f04; /* Couleur marron foncé */
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .newsletter-form input[type="nom"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+       }
+
+
+        .newsletter-form input[type="email"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color:#752f04; /* Couleur marron foncé */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #e06b04; /* Couleur orange foncé au survol */
+        }
+    </style>
+
+<div class="newsletter-section mt-4">
+    <h5 class="calligraffitti-regular text-orange">Inscrivez-vous à notre newsletter</h5>
+    <form action="#" method="POST" class="newsletter-form">
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Entrez votre email" aria-label="Entrez votre email" aria-describedby="button-addon2" required>
+            <div class="input-group-append">
+                <button class="btn btn-outline-light" type="submit" id="button-addon2">S'inscrire</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Pied de page -->
+<footer class="footer-custom mt-5 p-4 text-center">
+    <div class="footer-content">
+        <div class="footer-links mb-3">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li><a class="text-white mx-3 twinkle-star-regular" href="index.html">Accueil</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="produits.html">Produits</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="evenements.html">Événements</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="contact.html">Contact</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="apropos.html">À propos</a></li>
+            </ul>
+        </div>
+        <div class="social-icons mb-3">
+            <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <a href="index.html" class="text-white">Nawa 2024 Make-Up Artiste</a>. Tous droits réservés.</p>
+            <p>
+                <a href="mentions-legales.html" class="text-white">Mentions légales</a> |
+                <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
+                <a href="rgpd.html" class="text-white">RGPD</a>
+            </p>
+    </div>
+    </div>
+</footer>
+
+  <!-- jQuery et Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Votre script JavaScript personnalisé -->
+  <script src="../js/main.js"></script>
+
+
+</body>
+</html>

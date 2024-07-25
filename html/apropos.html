@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web de make-up artiste. Découvrez nos services et produits.">
+    <title>À Propos- Nawa - Make-Up Artiste</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Twinkle+Star&family=WindSong&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <!-- En-tête du site -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand calligraffitti-regular" href="index.html">
+                    <img src="../img/nawa-logo.png" alt="Logo nawa" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="produits.html">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="evenements.html">Événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link twinkle-star-regular" href="apropos.html">À propos</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-auto search-form">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-panier.png" alt="Panier" class="cart-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-- Section À propos -->
+     <div class="container about-section my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-text">
+                    <h2 class="calligraffitti-regular">À propos de nous</h2>
+                    <p>Chez Nawa Make-up Artiste, nous sommes une équipe passionnée par le maquillage et la beauté. Notre mission est de vous aider à découvrir les meilleurs produits et services de maquillage pour vous sentir belle et confiante. 
+                        <br>
+                        Notre objectif est de célébrer la beauté sous toutes ses formes et de promouvoir une approche inclusive et diversifiée de la beauté. Nous croyons que le maquillage est un outil puissant pour l'expression de soi et pour renforcer la confiance en soi. Rejoignez-nous dans notre aventure pour explorer le monde du maquillage et de la beauté, et découvrez comment nous pouvons vous aider à mettre en valeur votre beauté naturelle.
+                    <br>
+
+                    Nous offrons une large gamme de produits de maquillage de haute qualité, adaptés à tous les types de peau et à toutes les occasions. Que vous recherchiez un look naturel pour le quotidien ou un maquillage sophistiqué pour une soirée spéciale, nous avons ce qu'il vous faut. Nos produits sont soigneusement sélectionnés pour garantir leur efficacité et leur sécurité, et nous travaillons en étroite collaboration avec des experts de l'industrie pour rester à la pointe des dernières tendances et innovations.
+
+                    <br>
+
+                    En plus de nos produits, nous proposons également une variété de services de maquillage professionnels, y compris des consultations personnalisées, des séances de maquillage pour événements spéciaux, et des ateliers de formation. Nos maquilleurs expérimentés sont là pour vous conseiller et vous aider à trouver les techniques et les produits qui vous conviennent le mieux.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-photo">
+                    <img src="../img/photo-a-propos.jpg" alt="À propos de nous" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .brown-separator {
+            height: 4px;
+            background-color: #752f04; /* Marron */
+            margin: 40px 0; /* Marges pour espacer le séparateur du contenu */
+        }
+    </style>
+
+      <!-- Séparateur marron -->
+    <div class="brown-separator"></div>
+
+
+     <!-- Votre CSS personnalisé -->
+     <style>
+        .container {
+            margin-top: 50px;
+        }
+        .photo-wrapper {
+            overflow: hidden;
+            position: relative;
+            height: 400px; /* Hauteur du conteneur */
+        }
+        .photo-slider {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            animation: slide 9s infinite;
+        }
+        .photo-slider img {
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        @keyframes slide {
+            0% { transform: translateY(0); }
+            33% { transform: translateY(-100%); }
+            66% { transform: translateY(-200%); }
+            100% { transform: translateY(0); }
+        }
+        .text-content {
+            display: flex;
+            align-items: center;
+            height: 400px;
+        }
+        .text-content p {
+            margin: 0;
+        }
+    </style>
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Photos défilantes à gauche -->
+        <div class="col-md-6">
+            <div class="photo-wrapper">
+                <div class="photo-slider">
+                    <img src="../img/slider-a-propos-1.jpg" alt="Photo 1">
+                    <img src="../img/slider-a-propos-2.jpg" alt="Photo 2">
+                    <img src="../img/slider-a-propos-3.jpg" alt="Photo 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Texte à droite -->
+        <div class="col-md-6 text-content">
+            <p>
+                Chez Nawa Make-up Artiste, nous sommes dévoués à l'art de la beauté et du maquillage. Notre mission est de vous offrir une expérience unique avec des produits et services de qualité supérieure, pour que vous puissiez vous sentir magnifique et confiante. Nous valorisons la diversité et croyons que chaque individu mérite de se sentir beau à sa manière. Le maquillage est pour nous une forme d'expression personnelle et un moyen d'affirmer sa confiance en soi. Venez partager notre passion et découvrez comment nous pouvons sublimer votre beauté naturelle grâce à nos conseils et produits exclusifs.
+            </p>
+        </div>
+    </div>
+</div>
+             <!-- Bouton Voir nos produits -->
+    <div class="products-button">
+        <a href="produits.html">Voir nos produits</a>
+    </div>
+
+
+<style>
+    .brown-separator {
+        height: 4px;
+        background-color: #752f04; /* Marron */
+        margin: 40px 0; /* Marges pour espacer le séparateur du contenu */
+    }
+        .about-section {
+            margin-top: 50px;
+        }
+        .products-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Marges pour espacer le bouton du texte */
+        }
+        .products-button a {
+            padding: 10px 20px;
+            background-color: #8B4513; /* Marron */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .products-button a:hover {
+            background-color: #A0522D; /* Marron plus clair au survol */
+        }
+    
+</style>
+
+  <!-- Séparateur marron -->
+<div class="brown-separator"></div>
+     
+    <style>
+        .newsletter-section {
+            background-color: #f5f5dc; /* Beige clair */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            color: #752f04; /* Couleur marron foncé */
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .newsletter-form input[type="nom"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+       }
+
+
+        .newsletter-form input[type="email"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color:#752f04; /* Couleur marron foncé */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #e06b04; /* Couleur orange foncé au survol */
+        }
+    </style>
+
+<style>
+  
+        .testimonial-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #ebd1b0; /* orange clair */
+            display: flex;
+            align-items: center;
+        }
+        .testimonial img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .testimonial-content {
+            max-width: calc(100% - 100px); /* Ajuster en fonction de la largeur de l'image */
+        }
+        .testimonial h5 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .testimonial p {
+            margin-bottom: 10px;
+        }
+        .testimonial span {
+            font-style: italic;
+            color: #010101;
+        }
+    
+</style>
+
+<div class="container testimonial-section">
+    <div class="row">
+        <!-- Avis 1 -->
+        <div class="col-md-6">
+            <div class="testimonial">
+                <img src="../img/avis-1.jpg" alt="Jeanne Dupont">
+                <div class="testimonial-content">
+                    <h5>Jeanne Dupont</h5>
+                    <p>
+                        "Excellent service et produits de qualité ! Je suis toujours satisfait de mes achats chez Nawa Make-up Artiste. Je recommande fortement."
+                    </p>
+                    <span>Note : ★★★★★</span>
+                </div>
+            </div>
+        </div>
+        <!-- Avis 2 -->
+        <div class="col-md-6">
+            <div class="testimonial">
+                <img src="../img/avis-2.jpg" alt="Marie Leblanc">
+                <div class="testimonial-content">
+                    <h5>Marie Leblanc</h5>
+                    <p>
+                        "L'équipe est incroyablement talentueuse et professionnelle. J'ai adoré mon expérience et je reviendrai certainement pour plus de produits."
+                    </p>
+                    <span>Note : ★★★★★</span>
+                </div>
+            </div>
+        </div>
+        <!-- Avis 3 -->
+        <div class="col-md-6">
+            <div class="testimonial">
+                <img src="../img/avis3.jpg" alt="Sophie Martin">
+                <div class="testimonial-content">
+                    <h5>Sophie Martin</h5>
+                    <p>
+                        "Des produits fantastiques et un service clientèle exceptionnel. Nawa Make-up Artiste est mon choix numéro un pour tout ce qui concerne le maquillage."
+                    </p>
+                    <span>Note : ★★★★★</span>
+                </div>
+            </div>
+        </div>
+        <!-- Avis 4 -->
+        <div class="col-md-6">
+            <div class="testimonial">
+                <img src="../img/avis-4.jpg" alt="Paul Durand">
+                <div class="testimonial-content">
+                    <h5>Paul Durand</h5>
+                    <p>
+                        "Je suis toujours impressionnée par la qualité des produits et le professionnalisme de l'équipe. Je recommande Nawa Make-up Artiste à tout le monde."
+                    </p>
+                    <span>Note : ★★★★★</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter-section mt-4">
+    <h5 class="calligraffitti-regular text-orange">Inscrivez-vous à notre newsletter</h5>
+    <form action="#" method="POST" class="newsletter-form">
+        <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Entrez votre email" aria-label="Entrez votre email" aria-describedby="button-addon2" required>
+            <div class="input-group-append">
+                <button class="btn btn-outline-light" type="submit" id="button-addon2">S'inscrire</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Pied de page -->
+<footer class="footer-custom mt-5 p-4 text-center">
+    <div class="footer-content">
+        <div class="footer-links mb-3">
+            <ul class="list-unstyled d-flex justify-content-center">
+                <li><a class="text-white mx-3 twinkle-star-regular" href="index.html">Accueil</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="produits.html">Produits</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="evenements.html">Événements</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="contact.html">Contact</a></li>
+                <li><a class="text-white mx-3 twinkle-star-regular" href="apropos.html">À propos</a></li>
+            </ul>
+        </div>
+        <div class="social-icons mb-3">
+            <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <a href="index.html" class="text-white">Nawa 2024 Make-Up Artiste</a>. Tous droits réservés.</p>
+            <p>
+                <a href="mentions-legales.html" class="text-white">Mentions légales</a> |
+                <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
+                <a href="rgpd.html" class="text-white">RGPD</a>
+            </p>
+    </div>
+    </div>
+</footer>
+
+  <!-- jQuery et Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Votre script JavaScript personnalisé -->
+  <script src="../js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- Initialisation du slider -->
+  <script>
+      $(document).ready(function(){
+          $('.slider').slick({
+              dots: true,
+              infinite: true,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1
+          });
+      });
+  </script>
+</body>
+</html>

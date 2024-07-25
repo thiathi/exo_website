@@ -1,0 +1,316 @@
+ /* Styles précédents */
+
+/* Réinitialisation des marges et des paddings pour éviter les décalages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Appliquer Roboto à tout le texte du site */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* En-tête du site */
+header {
+    background-color: #752f04 !important; /* Couleur orange */
+    margin-bottom: 0; /* S'assurer qu'il n'y a pas de marge inférieure */
+}
+
+.navbar {
+    background-color: #752f04  !important; /* Couleur orange */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #f0eef3 !important; /* Couleur du texte en blanc pour contraster avec l'orange */
+}
+
+/* Logo dans l'en-tête */
+.logo-img {
+    width: 100px; /* Ajustez la taille  */
+    height: auto; /* Maintient le ratio d'aspect */
+}
+
+
+/* Style du carrousel */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    max-height: 700px; /* Ajustez la hauteur maximale */
+    overflow: hidden;
+    margin-top: 0; /* S'assurer qu'il n'y a pas de marge supérieure */
+    padding-top: 0; /* S'assurer qu'il n'y a pas de padding supérieure */
+}
+
+.carousel-item img {
+    width: 100%; /* La photo prendra toute la largeur du conteneur */
+    height: auto; /* La hauteur s'ajuste automatiquement pour maintenir le ratio d'aspect */
+    object-fit: cover; /* Assure que l'image couvre tout le conteneur sans déformation */
+}
+
+/* Contrôles du carrousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond des contrôles */
+    border-radius: 50%; /* Rond pour les contrôles */
+}
+ 
+.carousel-container {
+    position: relative;
+}
+
+.carousel-item-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffffeb; 
+    text-align: center;
+    z-index: 10; /* Assure que le texte est au-dessus des images */
+    font-weight: bold; /* Texte en gras */
+    font-size: 1rem; /* Ajustez la taille du titre  */
+}
+
+.carousel-item-text h1{
+    margin: 0 auto;
+    color: #e46e08; 
+    font-weight: bold; /* Texte en gras */
+    font-size: 2.2rem; /* Ajustez la taille du titre  */
+}
+
+/* Contenu principal */
+.introduction h1 {
+    font-size: 2.5rem;
+}
+
+.introduction p {
+    font-size: 1.25rem;
+}
+
+/* Texte après la photo d'accueil */
+.welcome-text {
+    background-color: #040404;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(15, 14, 14);
+}
+
+.welcome-text h2 {
+    color: #ff6600e3;
+}
+
+.welcome-text p {
+    color: #f5f1f1;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Typographie */
+.calligraffitti-regular {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.twinkle-star-regular {
+    font-family: "Twinkle Star", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.windsong-regular {
+    font-family: "WindSong", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Icônes des réseaux sociaux */
+.social-icon {
+    width: 24px; /* Ajustez la taille selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect */
+}
+
+/* Style du bouton personnalisé */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color:#7d3102  ; /* Couleur marron du bouton */
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime la décoration de texte par défaut */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #efeceb; /* Couleur au survol */
+    transform: scale(1.05); /* Agrandit légèrement le bouton au survol */
+}
+
+.btn-custom:focus {
+    outline: none; /* Supprime la bordure de focus par défaut */
+}
+
+.text-orange {
+    color: #ff6600e3 ; /* Change la couleur du texte en orange */
+}
+
+.search-form {
+    position: relative;
+    width: 180px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    background-color: green; /* Couleur de fond verte */
+    color: white; /* Couleur du texte blanche */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-input::placeholder {
+    color: white; /* Couleur du placeholder */
+}
+
+.cart-icon, .social-icon {
+    width: 20px; /* Ajustez la taille selon vos besoins */
+    height: 20px;
+    margin: 0 10px;
+}
+
+.card-price {
+    color: #eb0c0e; /* Couleur rouge pour le prix */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacement sous le prix */
+}
+
+.btn-brown {
+    background-color: #6f4f28; /* Couleur marron */
+    color: #fff; /* Texte blanc */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-brown:hover {
+    background-color: #5b3e1b; /* Couleur marron plus foncé au survol */
+}
+
+.container {
+    padding: 20px;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-btn {
+    background-color: #bf6f0e; /* Couleur orange */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #018b2a; /* Couleur marron plus foncé au survol */
+}
+
+/* Styles pour le filtrage des produits */
+.filter-btn.active {
+    background-color: #c96f02; /* Couleur orange clair pour le bouton actif */
+    color: #fff;
+}
+
+/* Cacher tous les produits par défaut */
+.product-card {
+    display: none; /* Cacher par défaut */
+}
+
+/* Afficher les produits de la catégorie active */
+.product-card.active {
+    display: block;
+}
+
+/* Pied de page */
+
+.newsletter-form .form-control {
+    border: none;
+    border-radius: 0;
+}
+
+.newsletter-form .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter-form .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-brown {
+    background-color:#752f04 ; /* Couleur marron */
+    color: #fff; /* Texte blanc */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-brown:hover {
+    background-color:#752f04  ; /* Couleur marron plus foncé au survol */
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    padding: 20px;
+}
+
+.about-photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #752f04  !important; /* Couleur marron */
+    color: #fff !important; /* Couleur du texte en blanc */
+}
+
+footer .footer-links a {
+    color: #fff !important; /* Couleur du texte en blanc */
+}
+
+footer .footer-info p {
+    color: #fff !important; /* Couleur du texte en blanc */
+}

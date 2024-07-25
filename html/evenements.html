@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web de make-up artiste. Découvrez nos services et produits.">
+    <title>Événements - Nawa - Make-Up Artiste</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Twinkle+Star&family=WindSong&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+         .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .carousel-item {
+            display: none;
+            text-align: center;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 800px;
+            object-fit: cover;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .carousel-button:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .page-title {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .calligraffitti-regular {
+            font-family: 'Calligraffitti', cursive;
+        }
+
+        .text-orange {
+            color: #e06b04; /* Couleur orange */
+        }
+
+        .event-content {
+            background-color: #f0bf75; 
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .event-content h2 {
+            color: #ff8032; /* Couleur marron foncé */
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .event-content p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #752f04; /* Couleur marron foncé */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0a0909; /* Couleur orange foncé au survol */
+        }
+
+        .event-planning {
+    background-color: #f5f5f5; /* Beige clair */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.event-planning h2 {
+    color: #040404; /* Couleur marron foncé */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center; /* Centre le calendrier horizontalement */
+    margin-bottom: 30px;
+}
+
+.calendar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px; /* Limite la largeur du calendrier */
+}
+
+.calendar h3 {
+    margin-top: 0;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    width: 14.28%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.calendar th {
+    background-color: #e0e0e0;
+}
+
+.event-schedule {
+    margin-top: 20px;
+    text-align: center; /* Centre le texte de la liste d'événements */
+}
+
+.event-schedule ul {
+    list-style-type: none; /* Retire les puces de la liste */
+    padding: 0;
+}
+
+.event-schedule li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.calendar-nav {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #752f04; /* Couleur marron foncé */
+    transition: color 0.3s ease;
+}
+
+.calendar-nav:hover {
+    color: #e06b04; /* Couleur orange foncé au survol */
+}
+
+.calendar h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+    </style>
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand calligraffitti-regular" href="index.html">
+                    <img src="../img/nawa-logo.png" alt="Logo nawa" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link twinkle-star-regular" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link twinkle-star-regular" href="produits.html">Produits</a></li>
+                        <li class="nav-item"><a class="nav-link twinkle-star-regular" href="evenements.html">Événements</a></li>
+                        <li class="nav-item"><a class="nav-link twinkle-star-regular" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link twinkle-star-regular" href="apropos.html">À propos</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-auto search-form">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/icone-panier.png" alt="Panier" class="cart-icon"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <main>
+        <div class="page-title">
+            <h1 class="calligraffitti-regular text-orange">Nos Événements</h1>
+        </div>
+        <div class="carousel-container">
+        <div class="carousel">
+            <button class="carousel-button prev">&#10094;</button>
+            <div class="carousel-item">
+                <img src="../img/evenement1.jpg" alt="Événement 1">
+                <div class="event-description">
+                    <h3>Promotion Spéciale</h3>
+                    <p>Obtenez 20% de réduction sur tous nos produits pour une durée limitée.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/evenement2.jpg" alt="Événement 2">
+                <div class="event-description">
+                    <h3>Webinar Exclusif</h3>
+                    <p>Participez à notre webinar sur les dernières tendances du maquillage.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/evenement3.jpg" alt="Événement 3">
+                <div class="event-description">
+                    <h3>Meeting VIP</h3>
+                    <p>Rencontrez nos experts en maquillage lors de notre meeting VIP.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/evenement4.jpg" alt="Événement 4">
+                <div class="event-description">
+                    <h3>Actualités du Mois</h3>
+                    <p>Découvrez les dernières actualités et lancements de produits.</p>
+                </div>
+            </div>
+            <button class="carousel-button next">&#10095;</button>
+        </div>
+    </div>
+       <!-- Section de contenu supplémentaire -->
+       <div class="event-content">
+        <h2>Restez Informé</h2>
+        <p>Nous avons de nombreux événements à venir et des offres spéciales tout au long de l'année. Ne manquez pas les prochaines actualités et promotions en vous inscrivant à notre newsletter.</p>
+        <!-- Section du planning d'événements -->
+<div class="event-planning">
+    <h2>Planning des Événements</h2>
+    <div class="calendar-container">
+        <div class="calendar">
+            <h3>
+                <button id="prev-month" class="calendar-nav">&#10094;</button>
+                <span id="month-year"></span>
+                <button id="next-month" class="calendar-nav">&#10095;</button>
+            </h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lun</th>
+                        <th>Mar</th>
+                        <th>Mer</th>
+                        <th>Jeu</th>
+                        <th>Ven</th>
+                        <th>Sam</th>
+                        <th>Dim</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                    <!-- Les jours seront insérés ici via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="event-schedule">
+        <h3>Prochains Événements</h3>
+        <ul>
+            <li>1 Août 2024 - Webinar Exclusif</li>
+            <li>15 Août 2024 - Meeting VIP</li>
+            <li>22 Août 2024 - Actualités du Mois</li>
+            <!-- Ajouter d'autres événements si nécessaire -->
+        </ul>
+    </div>
+</div>
+        <a href="contact.html" class="btn btn-primary">Contactez-nous pour plus d'informations</a>
+    </div>
+    </main>
+
+     <!-- Formulaire de prise de rendez-vous -->
+<div class="appointment-form-container mt-5">
+    <h2>Prendre un Rendez-vous</h2>
+    <form action="#" method="POST" class="appointment-form" onsubmit="return showConfirmation()">
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date souhaitée</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Heure souhaitée</label>
+            <input type="time" class="form-control" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+</div>
+
+    <style>
+   .appointment-form {
+    background-color: #907c5e; /* orange clair */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form h2 {
+    color: #752f04; /* Couleur marron foncé */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.appointment-form .form-group {
+    margin-bottom: 15px;
+}
+
+.appointment-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.appointment-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #752f04; /* Couleur marron foncé */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+    background-color: #e06b04; /* Couleur orange foncé au survol */
+}
+    </style>
+
+
+    <style>
+        .newsletter-section {
+            background-color: #f5f5dc; /* Beige clair */
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            color: #752f04; /* Couleur marron foncé */
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+
+        .newsletter-form input[type="email"] {
+            width: calc(100% - 120px);
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .newsletter-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color:#752f04; /* Couleur marron foncé */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #e06b04; /* Couleur orange foncé au survol */
+        }
+    </style>
+    <div class="newsletter-section mt-4">
+        <h5 class="calligraffitti-regular text-orange">Inscrivez-vous à notre newsletter</h5>
+        <form action="#" method="POST" class="newsletter-form">
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Entrez votre email" aria-label="Entrez votre email" aria-describedby="button-addon2" required>
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light" type="submit" id="button-addon2">S'inscrire</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer-custom mt-5 p-4 text-center">
+        <div class="footer-content">
+            <div class="footer-links mb-3">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li><a class="text-white mx-3 twinkle-star-regular" href="index.html">Accueil</a></li>
+                    <li><a class="text-white mx-3 twinkle-star-regular" href="produits.html">Produits</a></li>
+                    <li><a class="text-white mx-3 twinkle-star-regular" href="evenements.html">Événements</a></li>
+                    <li><a class="text-white mx-3 twinkle-star-regular" href="contact.html">Contact</a></li>
+                    <li><a class="text-white mx-3 twinkle-star-regular" href="apropos.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="social-icons mb-3">
+                <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+                <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+                <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; <a href="index.html" class="text-white">Nawa 2024 Make-Up Artiste</a>. Tous droits réservés.</p>
+                <p>
+                    <a href="mentions-legales.html" class="text-white">Mentions légales</a> |
+                    <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
+                    <a href="rgpd.html" class="text-white">RGPD</a>
+                </p>
+        </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap Bundle (includes Popper) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            let index = 0;
+            const items = $('.carousel-item');
+            const totalItems = items.length;
+
+            function showItem(i) {
+                items.hide();
+                items.eq(i).show();
+            }
+
+            showItem(index);
+
+            $('.prev').click(function() {
+                index = (index - 1 + totalItems) % totalItems;
+                showItem(index);
+            });
+
+            $('.next').click(function() {
+                index = (index + 1) % totalItems;
+                showItem(index);
+            });
+
+            setInterval(() => {
+                index = (index + 1) % totalItems;
+                showItem(index);
+            }, 3000); // Change d'image toutes les 3 secondes
+        });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let currentMonth = new Date().getMonth();
+        let currentYear = new Date().getFullYear();
+        const calendarBody = document.getElementById('calendar-body');
+        const monthYearElement = document.getElementById('month-year');
+
+        function renderCalendar(month, year) {
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const daysInMonth = lastDay.getDate();
+
+            monthYearElement.textContent = `${firstDay.toLocaleString('default', { month: 'long' })} ${year}`;
+            calendarBody.innerHTML = '';
+
+            let row = document.createElement('tr');
+
+            // Add empty cells for days before the first day of the month
+            for (let i = 0; i < firstDay.getDay(); i++) {
+                row.appendChild(document.createElement('td'));
+            }
+
+            // Add days of the month
+            for (let day = 1; day <= daysInMonth; day++) {
+                if (row.children.length === 7) {
+                    calendarBody.appendChild(row);
+                    row = document.createElement('tr');
+                }
+                const cell = document.createElement('td');
+                cell.textContent = day;
+                row.appendChild(cell);
+            }
+
+            // Add empty cells for days after the last day of the month
+            while (row.children.length < 7) {
+                row.appendChild(document.createElement('td'));
+            }
+            calendarBody.appendChild(row);
+        }
+
+        renderCalendar(currentMonth, currentYear);
+
+        document.getElementById('prev-month').addEventListener('click', function() {
+            if (currentMonth === 0) {
+                currentMonth = 11;
+                currentYear--;
+            } else {
+                currentMonth--;
+            }
+            renderCalendar(currentMonth, currentYear);
+        });
+
+        document.getElementById('next-month').addEventListener('click', function() {
+            if (currentMonth === 11) {
+                currentMonth = 0;
+                currentYear++;
+            } else {
+                currentMonth++;
+            }
+            renderCalendar(currentMonth, currentYear);
+        });
+    });
+</script>
+
+<script>
+    function showConfirmation() {
+        // Affiche un message de confirmation
+        alert('Votre formulaire a été envoyé avec succès !');
+        // Empêche l'envoi réel du formulaire pour démonstration
+        // Vous pouvez retirer la ligne suivante pour permettre l'envoi
+        return false;
+    }
+</script>
+
+</body>
+</html>
+
