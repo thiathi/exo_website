@@ -14,41 +14,67 @@
     <!-- Votre CSS personnalisé -->
     <link rel="stylesheet" href="../css/style.css">
     <style>
-         .carousel {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            margin: 20px 0;
-        }
-        .carousel-item {
-            display: none;
-            text-align: center;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-            max-height: 800px;
-            object-fit: cover;
-        }
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0,0,0,0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .prev {
-            left: 10px;
-        }
-        .next {
-            right: 10px;
-        }
-        .carousel-button:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
+   .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Largeur maximale du carrousel */
+    margin: 20px auto; /* Centre le carrousel et ajoute de l'espace autour */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Réduit la hauteur maximale des images */
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Couleur des flèches */
+    border: none;
+    padding: 0; /* Supprime le padding pour ne pas avoir d'espace supplémentaire */
+    cursor: pointer;
+    z-index: 10; /* Assure que les boutons sont au-dessus des images */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Positionne le bouton précédent */
+}
+
+.carousel-control-next {
+    right: 10px; /* Positionne le bouton suivant */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none; /* Retire le fond */
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Optionnel : possibilité aussi d'ajouter un effet de survol */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: rgba(255, 255, 255, 0.8); /* Change la couleur des flèches au survol */
+}
+
+
+
+
         .page-title {
             text-align: center;
             margin-top: 50px;
@@ -91,7 +117,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #0a0909; /* Couleur orange foncé au survol */
+            background-color: #e06b04; /* Couleur orange  au survol */
         }
 
         .event-planning {
@@ -167,7 +193,7 @@
 }
 
 .calendar-nav:hover {
-    color: #e06b04; /* Couleur orange foncé au survol */
+    color: #e06b04; /* Couleur orange  au survol */
 }
 
 .calendar h3 {
@@ -176,6 +202,38 @@
     align-items: center;
     margin-top: 0;
 }
+
+
+        .btn-custom:hover {
+            background-color: darkorange;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #de8620;
+        }
+
+        .section-content {
+            margin-bottom: 40px;
+        }
+
+        .section-content p {
+            text-align: justify;
+        }
+
+        .promo-image {
+            max-width: 100%;
+            height: auto;
+        }
 
     </style>
 </head>
@@ -216,40 +274,109 @@
         <div class="page-title">
             <h1 class="calligraffitti-regular text-orange">Nos Événements</h1>
         </div>
+
+        <!-- caroussel 1 -->
         <div class="carousel-container">
         <div class="carousel">
             <button class="carousel-button prev">&#10094;</button>
             <div class="carousel-item">
-                <img src="../img/evenement1.jpg" alt="Événement 1">
-                <div class="event-description">
-                    <h3>Promotion Spéciale</h3>
-                    <p>Obtenez 20% de réduction sur tous nos produits pour une durée limitée.</p>
-                </div>
+                <img src="../img/promos-speciales.jpg" alt="image 1">
+            </div>
+
+            <!-- caroussel 2 -->
+            <div class="carousel-item">
+                <img src="../img/webinar-exclusif.jpg" alt="image 2">
+        
+                <!-- caroussel 3 -->
             </div>
             <div class="carousel-item">
-                <img src="../img/evenement2.jpg" alt="Événement 2">
-                <div class="event-description">
-                    <h3>Webinar Exclusif</h3>
-                    <p>Participez à notre webinar sur les dernières tendances du maquillage.</p>
-                </div>
+                <img src="../img/meeting-vip.jpg" alt="image 3">
+                
+                <!-- caroussel 4 -->
             </div>
             <div class="carousel-item">
-                <img src="../img/evenement3.jpg" alt="Événement 3">
-                <div class="event-description">
-                    <h3>Meeting VIP</h3>
-                    <p>Rencontrez nos experts en maquillage lors de notre meeting VIP.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../img/evenement4.jpg" alt="Événement 4">
-                <div class="event-description">
-                    <h3>Actualités du Mois</h3>
-                    <p>Découvrez les dernières actualités et lancements de produits.</p>
-                </div>
+                <img src="../img/actualite-du-mois-2.jpg" alt="image 4">
             </div>
             <button class="carousel-button next">&#10095;</button>
         </div>
     </div>
+
+
+
+        <!-- Bienvenue Section -->
+    <div class="container my-5">
+        <h1 class="text-center Roboto title-orange">Bienvenue sur Nawa Make-Up Artiste</h1>
+        <p class="text-center section-content">
+            Découvrez l'univers enchanteur de Nawa Make-Up Artiste, où la beauté prend vie et l'art du maquillage devient une véritable passion. Nous sommes ravis de vous accueillir sur notre site et de partager avec vous toutes les nouveautés et les événements excitants à venir.
+        </p>
+    </div>
+
+    <!-- Promotions Exclusives Section -->
+    <div class="container">
+        <h2 class="section-title Roboto title-orange">Promotions Exclusives</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../img/evenement1.jpg" alt="Promotions Exclusives" class="promo-image">
+            </div>
+            <div class="col-md-6 section-content">
+                <p>
+                    Chez Nawa Make-Up Artiste, nous croyons que chaque personne mérite de se sentir belle et confiante. Pour célébrer l'arrivée de l'été, nous lançons des promotions exclusives sur nos produits et services. Profitez de réductions allant jusqu'à 30% sur une sélection de nos meilleurs produits de maquillage et de soins de la peau. De plus, bénéficiez de 20% de réduction sur toutes nos séances de maquillage personnalisées. Ne manquez pas cette occasion de vous offrir un moment de beauté à prix réduit !
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Webinaires Interactifs Section -->
+    <div class="container">
+        <h2 class="section-title Roboto title-orange">Webinaires Interactifs</h2>
+        <div class="row">
+            <div class="col-md-6 section-content">
+                <p>
+                    Envie de perfectionner vos compétences en maquillage ou d'apprendre de nouvelles techniques ? Rejoignez nos webinaires interactifs animés par Nawa elle-même. Ces sessions en ligne vous permettront de découvrir des astuces professionnelles, de poser toutes vos questions en direct et de participer à des démonstrations pratiques. Les places sont limitées, alors inscrivez-vous dès maintenant pour ne pas rater cette opportunité unique d'apprendre de l'une des meilleures maquilleuses du domaine.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="../img/evenement2.jpg" alt="Webinaires Interactifs" class="promo-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Meetings VIP Section -->
+    <div class="container">
+        <h2 class="section-title Roboto title-orange">Meetings VIP</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../img/evenement3.jpg" alt="Meetings VIP" class="promo-image">
+            </div>
+            <div class="col-md-6 section-content">
+                <p>
+                    Pour nos clients les plus fidèles, nous organisons des meetings VIP exclusifs. Ces événements privés vous offrent la chance de rencontrer Nawa en personne, de discuter de vos besoins en matière de beauté et de recevoir des conseils personnalisés. C'est également l'occasion de découvrir en avant-première nos nouveaux produits et de bénéficier de cadeaux exclusifs. Pour participer, assurez-vous de faire partie de notre programme de fidélité et surveillez votre boîte mail pour recevoir votre invitation spéciale.
+                </p>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- Restez Connectés Section -->
+    <div class="container">
+        <h2 class="section-title Roboto title-orange">Nos actualités</h2>
+        <div class="row">
+            <div class="col-md-6 section-content">
+                <p>
+                    Ne manquez aucune de nos actualités en vous abonnant à notre newsletter. Suivez-nous également sur les réseaux sociaux pour découvrir nos dernières créations, des tutoriels inspirants et les témoignages de nos clientes satisfaites. Chez Nawa Make-Up Artiste, nous sommes dédiés à sublimer votre beauté naturelle et à vous offrir une expérience inoubliable.
+                </p>
+                <p>
+                    Nous vous remercions de votre visite et avons hâte de vous retrouver lors de nos prochains événements. Ensemble, faisons briller votre beauté intérieure et extérieure.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="../img/evenement4.jpg" alt="Restez Connectés" class="promo-image">
+            </div>
+        </div>
+    </div>
+
+
        <!-- Section de contenu supplémentaire -->
        <div class="event-content">
         <h2>Restez Informé</h2>
@@ -289,7 +416,7 @@
             <li>1 Août 2024 - Webinar Exclusif</li>
             <li>15 Août 2024 - Meeting VIP</li>
             <li>22 Août 2024 - Actualités du Mois</li>
-            <!-- Ajouter d'autres événements si nécessaire -->
+            <!-- Ajout d'autres événements si nécessaire -->
         </ul>
     </div>
 </div>
@@ -298,7 +425,7 @@
     </main>
 
      <!-- Formulaire de prise de rendez-vous -->
-<div class="appointment-form-container mt-5">
+<div class="appointment-form-container title-form">
     <h2>Prendre un Rendez-vous</h2>
     <form action="#" method="POST" class="appointment-form" onsubmit="return showConfirmation()">
         <div class="form-group">
@@ -330,9 +457,17 @@
 </div>
 
     <style>
-   .appointment-form {
+
+.title-form {
+    
+    text-align: center;
+    
+}
+.appointment-form {
     background-color: #907c5e; /* orange clair */
-    padding: 40px 20px;
+    padding: 20px; /* Réduit le padding pour diminuer la taille du formulaire */
+    max-width: 500px; /* Limite la largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -341,28 +476,38 @@
 .appointment-form h2 {
     color: #752f04; /* Couleur marron foncé */
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Réduit l'espace sous le titre */
 }
 
 .appointment-form .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Réduit l'espace entre les champs de formulaire */
 }
 
-.appointment-form .form-control {
-    border-radius: 5px;
-    border: 1px solid #ddd;
+.appointment-form input, 
+.appointment-form textarea, 
+.appointment-form button {
+    width: 100%; /* Assure que les éléments remplissent la largeur du formulaire */
+    max-width: 100%; /* Empêche les éléments de dépasser la largeur du formulaire */
+}
+
+.appointment-form input[type="text"], 
+.appointment-form input[type="email"], 
+.appointment-form input[type="tel"], 
+.appointment-form textarea {
+    padding: 10px; /* Réduit le padding à l'intérieur des champs */
+    font-size: 14px; /* Réduit la taille de la police des champs de texte */
 }
 
 .appointment-form button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #752f04; /* Couleur marron foncé */
+    padding: 10px; /* Ajuste le padding du bouton */
+    font-size: 16px; /* Réduit la taille de la police du bouton */
     border: none;
-    border-radius: 5px;
+    background-color: #752f04; /* Couleur marron foncé pour le bouton */
+    color: white;
+    border-radius: 4px; /* Bords arrondis du bouton */
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
+
 
 .appointment-form button:hover {
     background-color: #e06b04; /* Couleur orange foncé au survol */
@@ -423,35 +568,38 @@
             </div>
         </form>
     </div>
-
-    <!-- Pied de page -->
-    <footer class="footer-custom mt-5 p-4 text-center">
-        <div class="footer-content">
-            <div class="footer-links mb-3">
-                <ul class="list-unstyled d-flex justify-content-center">
-                    <li><a class="text-white mx-3 twinkle-star-regular" href="index.html">Accueil</a></li>
-                    <li><a class="text-white mx-3 twinkle-star-regular" href="produits.html">Produits</a></li>
-                    <li><a class="text-white mx-3 twinkle-star-regular" href="evenements.html">Événements</a></li>
-                    <li><a class="text-white mx-3 twinkle-star-regular" href="contact.html">Contact</a></li>
-                    <li><a class="text-white mx-3 twinkle-star-regular" href="apropos.html">À propos</a></li>
-                </ul>
-            </div>
-            <div class="social-icons mb-3">
-                <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
-                <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
-                <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
-            </div>
-            <div class="footer-info">
-                <p>&copy; <a href="index.html" class="text-white">Nawa 2024 Make-Up Artiste</a>. Tous droits réservés.</p>
-                <p>
-                    <a href="mentions-legales.html" class="text-white">Mentions légales</a> |
-                    <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
-                    <a href="rgpd.html" class="text-white">RGPD</a>
-                </p>
+<!-- Pied de page -->
+<footer class="footer-custom mt-5 p-4">
+    <div class="footer-content">
+        <div class="footer-links">
+            <ul class="list-unstyled">
+                <li><a class="text-white twinkle-star-regular" href="index.html">Accueil</a></li>
+                <li><a class="text-white twinkle-star-regular" href="produits.html">Produits</a></li>
+                <li><a class="text-white twinkle-star-regular" href="evenements.html">Événements</a></li>
+                <li><a class="text-white twinkle-star-regular" href="contact.html">Contact</a></li>
+                <li><a class="text-white twinkle-star-regular" href="apropos.html">À propos</a></li>
+            </ul>
         </div>
+        <div class="social-icons">
+            <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
+            <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
         </div>
-    </footer>
-
+        <div class="footer-info">
+            <p>&copy; <a href="index.html" class="text-white">Nawa 2024 Make-Up Artiste</a>. Tous droits réservés.</p>
+            <p>
+                <a href="mentions-legales.html" class="text-white">Mentions légales</a> |
+                <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
+                <a href="rgpd.html" class="text-white">RGPD</a>
+            </p>
+        </div>
+    </div>
+    <div class="footer-images">
+        <img src="../img/footer-image-1.jpg" alt="Image 1" class="footer-img">
+        <img src="../img/footer-image-2.jpg" alt="Image 2" class="footer-img">
+        <img src="../img/footer-image-3.jpg" alt="Image 3" class="footer-img">
+    </div>
+</footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Bootstrap Bundle (includes Popper) -->
@@ -556,7 +704,7 @@
         // Affiche un message de confirmation
         alert('Votre formulaire a été envoyé avec succès !');
         // Empêche l'envoi réel du formulaire pour démonstration
-        // Vous pouvez retirer la ligne suivante pour permettre l'envoi
+        // possibilité de retirer la ligne suivante pour permettre l'envoi
         return false;
     }
 </script>

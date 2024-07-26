@@ -197,6 +197,14 @@ header {
     margin-bottom: 10px; /* Espacement sous le prix */
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Assurez-vous que le bouton est poussé vers le bas */
+    align-items: center; /* Centre le bouton horizontalement */
+}
+
+
 .btn-brown {
     background-color: #6f4f28; /* Couleur marron */
     color: #fff; /* Texte blanc */
@@ -223,7 +231,7 @@ header {
 }
 
 .filter-btn {
-    background-color: #bf6f0e; /* Couleur orange */
+    background-color: #ff6600e3; /* Couleur orange */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -236,7 +244,7 @@ header {
 }
 
 .filter-btn:hover {
-    background-color: #018b2a; /* Couleur marron plus foncé au survol */
+    background-color: #018b2a; /* Couleur vert plus foncé au survol */
 }
 
 /* Styles pour le filtrage des produits */
@@ -313,4 +321,117 @@ footer .footer-links a {
 
 footer .footer-info p {
     color: #fff !important; /* Couleur du texte en blanc */
+}
+
+.footer-custom {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons .social-icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Espace entre les images */
+}
+
+.footer-images .footer-img {
+    width: 80px; /* Agrandir la taille des images */
+    height: auto;
+   
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        justify-content: space-around; /* Répartir les éléments de manière uniforme */
+    }
+
+    .footer-links,
+    .social-icons,
+    .footer-info {
+        flex: 1 1 45%; /* Pour les écrans de tablette, chaque section prend 45% de la largeur */
+        text-align: center; /* Centrer le texte pour tablette */
+    }
+    
+    .footer-images .footer-img {
+        width: 70px; /* Ajuste la taille des images sur les écrans plus petits */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-links,
+    .social-icons,
+    .footer-info {
+        flex: 1 1 45%; /* Pour les écrans de tablette, chaque section prend 45% de la largeur */
+        text-align: center;
+    }
+    
+    .footer-images .footer-img {
+        width: 70px; /* Ajuste encore plus la taille des images sur les écrans plus petits */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .social-icons,
+    .footer-info {
+        flex: 1 1 100%; /* Pour les écrans de smartphone, chaque section prend 100% de la largeur */
+        text-align: center;
+    }
+    
+    .footer-images .footer-img {
+        width: 60px; /* Ajuste encore plus la taille des images sur les écrans plus petits */
+    }
 }

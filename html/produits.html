@@ -11,7 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Twinkle+Star&family=WindSong&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Votre CSS personnalisé -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .filter-button {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filter-btn {
+            margin: 5px;
+            width: 100%;
+        }
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .btn-brown {
+            background-color: #8B4513;
+            color: white;
+        }
+    </style>
+    <!--  CSS personnalisé -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -73,55 +91,67 @@
         </div>
     </div>
 
-     <!-- Boutons de filtrage -->
-     <div class="filter-button text-center mb-4">
-    <button class="filter-btn active" data-category="all">Tous</button>
-    <button class="filter-btn" data-category="fard-a-paupieres">Fard à paupières</button>
-    <button class="filter-btn" data-category="pinceaux">Pinceaux</button>
-    <button class="filter-btn" data-category="rouge-a-levres">Rouge à lèvres</button>
-    <button class="filter-btn" data-category="fond-de-teint">Fond de teint</button>
+  <!-- Boutons de filtrage -->
+  <div class="container">
+    <div class="row filter-button text-center mb-4">
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
+            <button class="filter-btn btn btn-primary active" data-category="all">Tous</button>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
+            <button class="filter-btn btn btn-primary" data-category="yeux">Yeux</button>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
+            <button class="filter-btn btn btn-primary" data-category="pinceaux">Pinceaux</button>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
+            <button class="filter-btn btn btn-primary" data-category="rouge-a-levres">Rouge à lèvres</button>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-2">
+            <button class="filter-btn btn btn-primary" data-category="fond-de-teint">Fond de teint</button>
+        </div>
+    </div>
 </div>
 
     <!-- Section des produits -->
     <div class="container">
         <div class="row">
             <!-- Fard à Paupières -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fard-a-paupieres">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card yeux">
                 <div class="card h-100">
                     <img src="../img/fard-a-paupieres-1.jpg" class="card-img-top" alt="fard-a-paupieres-1">
                     <div class="card-body">
-                        <h5 class="card-title">Fard à Paupières</h5>
+                        <h5 class="card-title">Yeux</h5>
                         <p class="card-price">Prix: 20€</p>
                         <button class="btn btn-brown">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card  fard-a-paupieres">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card yeux">
                 <div class="card h-100">
                     <img src="../img/fard-a-paupieres-2.jpg" class="card-img-top" alt="fard-a-paupieres-2">
                     <div class="card-body">
-                        <h5 class="card-title">Fard à Paupières</h5>
+                        <h5 class="card-title">Yeux</h5>
                         <p class="card-price">Prix: 15€</p>
                         <button class="btn btn-brown">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fard-a-paupieres">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card yeux">
                 <div class="card h-100">
                     <img src="../img/fard-a-paupieres-3.jpg" class="card-img-top" alt="fard-a-paupieres-3">
                     <div class="card-body">
-                        <h5 class="card-title">Fard à Paupières</h5>
+                        <h5 class="card-title">Yeux</h5>
                         <p class="card-price">Prix: 10€</p>
                         <button class="btn btn-brown">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
            
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card fard-a-paupieres">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 product-card yeux">
                 <div class="card h-100">
                     <img src="../img/fard-a-paupieres-4.jpg" class="card-img-top" alt="fard-a-paupieres-4">
                     <div class="card-body">
-                        <h5 class="card-title">Fard à Paupières</h5>
+                        <h5 class="card-title">Yeux</h5>
                         <p class="card-price">Prix: 25€</p>
                         <button class="btn btn-brown">Ajouter au panier</button>
                     </div>
@@ -323,18 +353,18 @@
 </div>
 
 <!-- Pied de page -->
-<footer class="footer-custom mt-5 p-4 text-center">
+<footer class="footer-custom mt-5 p-4">
     <div class="footer-content">
-        <div class="footer-links mb-3">
-            <ul class="list-unstyled d-flex justify-content-center">
-                <li><a class="text-white mx-3 twinkle-star-regular" href="index.html">Accueil</a></li>
-                <li><a class="text-white mx-3 twinkle-star-regular" href="produits.html">Produits</a></li>
-                <li><a class="text-white mx-3 twinkle-star-regular" href="evenements.html">Événements</a></li>
-                <li><a class="text-white mx-3 twinkle-star-regular" href="contact.html">Contact</a></li>
-                <li><a class="text-white mx-3 twinkle-star-regular" href="apropos.html">À propos</a></li>
+        <div class="footer-links">
+            <ul class="list-unstyled">
+                <li><a class="text-white twinkle-star-regular" href="index.html">Accueil</a></li>
+                <li><a class="text-white twinkle-star-regular" href="produits.html">Produits</a></li>
+                <li><a class="text-white twinkle-star-regular" href="evenements.html">Événements</a></li>
+                <li><a class="text-white twinkle-star-regular" href="contact.html">Contact</a></li>
+                <li><a class="text-white twinkle-star-regular" href="apropos.html">À propos</a></li>
             </ul>
         </div>
-        <div class="social-icons mb-3">
+        <div class="social-icons">
             <a class="text-white mx-2" href="#"><img src="../img/icone-facebook.png" alt="Facebook" class="social-icon"></a>
             <a class="text-white mx-2" href="#"><img src="../img/icone-instagram.jpeg" alt="Instagram" class="social-icon"></a>
             <a class="text-white mx-2" href="#"><img src="../img/icone-twitter.png" alt="Twitter" class="social-icon"></a>
@@ -346,7 +376,12 @@
                 <a href="politique-confidentialite.html" class="text-white">Politique de confidentialité</a> |
                 <a href="rgpd.html" class="text-white">RGPD</a>
             </p>
+        </div>
     </div>
+    <div class="footer-images">
+        <img src="../img/footer-image-1.jpg" alt="Image 1" class="footer-img">
+        <img src="../img/footer-image-2.jpg" alt="Image 2" class="footer-img">
+        <img src="../img/footer-image-3.jpg" alt="Image 3" class="footer-img">
     </div>
 </footer>
 
@@ -354,9 +389,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <!-- Votre script JavaScript personnalisé -->
   <script src="../js/main.js"></script>
-
-
 </body>
 </html>
